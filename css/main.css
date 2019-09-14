@@ -3,7 +3,7 @@ body {
     width: 70%;
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Helvetica', 'Arial', 'Sans-Serif', 'Times New Roman', Times, serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -24,7 +24,7 @@ h1 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-size: 1.5em;
+    font-size: xx-large;
     line-height: 1.4em;
     color: #333;
 }
@@ -40,4 +40,8 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+.centerCell {
+    text-align: center;
 }
