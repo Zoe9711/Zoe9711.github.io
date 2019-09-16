@@ -1,4 +1,4 @@
-p {
+p.welcome {
 
     font-size: 200px;
     font-family: 'Times New Roman', Times, serif;
@@ -7,15 +7,26 @@ p {
     text-align: center;
     vertical-align: middle;
 
-    -webkit-animation: fadein 3s;
+    -webkit-animation: fadein 5s;
 }
 
 @-webkit-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+a {
+    text-decoration: none;
+}
 a:hover {
     text-decoration: underline;
+    text-decoration-color: #BABABA;
 }
 
-
+p.me {
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #BABABA;
+    text-align: center;
+    -webkit-animation: fadein 15s;
+}

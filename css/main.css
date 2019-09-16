@@ -12,17 +12,19 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+header {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #BABABA;
+}
 a {
     text-decoration: none;
-    color: #999;
 }
 a:hover {
     text-decoration: underline;
+    text-decoration-color: #BABABA;
 }
-h1 {
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
