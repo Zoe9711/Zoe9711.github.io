@@ -1,0 +1,22 @@
+p {
+
+    font-size: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #BABABA; 
+    text-align: center;
+    vertical-align: middle;
+
+    -webkit-animation: fadein 3s;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+p:hover {
+    text-decoration: underline;
+}
+
+
