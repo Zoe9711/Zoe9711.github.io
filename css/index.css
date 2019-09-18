@@ -31,6 +31,18 @@ html, body {
     font-family: 'Times New Roman', Times, serif;
     color: #000000;
     line-height: 1em;
+    -webkit-animation: fadein 10s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
 }
 
 .zoe-zhang {
