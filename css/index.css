@@ -69,7 +69,8 @@ html, body {
 
 #nav li {
     float: left;
-
+    display: inline;
+    list-style-type: none;
 }
 
 #nav li a {
