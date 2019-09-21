@@ -1,3 +1,6 @@
+﻿body {
+    overflow: hidden;
+}
 #menu * {
     padding: 0;
     margin: 0;
@@ -81,6 +84,65 @@
             bottom: 100%;
         }
 
+
+#box * {
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    #box {
+    overflow:scroll;
+    position: absolute;
+    top: 120px;
+    left: 150px;
+    width: 800px;
+    height: 550px;
+    /*border: solid 1px #000000;*/
+    line-height: 1.5em;
+    }
+
+        #box p.zoe {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            color: #000000;
+            text-align: justify;
+            -webkit-animation: fadein 2s;
+        }
+
+        #box p.cite {
+            padding-top: 20px;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            color: #1D1D1D;
+            text-align: right;
+            -webkit-animation: fadein 4s;
+        }
+
+        #box p.biopolitics {
+            text-indent:50px;
+            padding-top: 40px;
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+            color: #000000;
+            text-align: justify;
+            -webkit-animation: fadein 2s;
+            line-height: 2em;
+        }
+
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 @-webkit-keyframes fadeOut {
     from {
         opacity: 1;
@@ -91,15 +153,10 @@
     }
 }
 
-@-webkit-keyframes darken {
-    from {
-        background-color: #585858;
-    }
-
-    to {
-        background-color: #000000;
-    }
+.bg {
+    background-color: #585858;
 }
+
 
 
 
