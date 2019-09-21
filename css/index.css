@@ -31,7 +31,7 @@ html, body {
     font-family: 'Times New Roman', Times, serif;
     color: #000000;
     line-height: 1em;
-    -webkit-animation: fadein 10s;
+    -webkit-animation: fadein 5s;
 }
 
 @-webkit-keyframes fadein {
@@ -87,7 +87,7 @@ html, body {
 
 #nav li.information a:hover {
     text-decoration: underline;
-    text-decoration-color: #BABABA;
+    text-decoration-color: #A0A0A0;
 }
 
 #nav li.contact a {
@@ -97,7 +97,7 @@ html, body {
 
 #nav li.contact a:hover {
     text-decoration: underline;
-    text-decoration-color: #BABABA;
+    text-decoration-color: #A0A0A0;
 }
 
 
