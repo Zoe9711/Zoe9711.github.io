@@ -1,0 +1,240 @@
+﻿
+@-webkit-keyframes darken {
+    from {
+        background-color: #585858;
+    }
+
+    to {
+        background-color: #000000;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes showHide { 
+    0% {
+        opacity:0;
+        /*color: #000000;*/
+    }
+
+    40% {
+        opacity: 1;
+        /*color: #A0A0A0;*/
+    }
+
+    60% {
+        opacity: 1;
+        /*color: #A0A0A0;*/
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+    .bg {
+        background-color: #585858;
+    }
+
+    .scene_element {
+        animation-duration: 4s;
+        transition-timing-function: ease-in;
+        animation-fill-mode: both;
+    }
+
+    .scene_element--fadeOut {
+        animation-name: fadeOut;
+    }
+
+    .scene_element--darken {
+        animation-name: darken;
+    }
+
+.newscene {
+    animation-delay: 5s;
+    animation-duration: 7s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-name: showHide;
+}
+
+
+
+#title {
+    height: 88px;
+    width: 467px;
+    /*border: solid 1px #A0A0A0;*/
+    position: absolute;
+    top: 43%;
+    left: 35%;
+    opacity: 0
+}
+
+#title p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: #A0A0A0;
+}
+
+    body {
+        overflow: hidden;
+    }
+
+    #menu * {
+        padding: 0;
+        margin: 0;
+        font: 14px;
+        font-family: 'Times New Roman', Times, serif;
+        list-style-type: none;
+    }
+
+    #menu {
+        position: absolute;
+        bottom: 59px;
+        right: 91px;
+        float: left;
+        line-height: 10px;
+    }
+
+    #menu a {
+        display: block;
+        text-decoration: none;
+        color: #A0A0A0;
+    }
+
+    #menu a:hover {
+        text-decoration: underline;
+        text-decoration-color: #A0A0A0;
+    }
+
+
+    #menu ul li ul li {
+        width: 80px;
+        border: none;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 4px;
+        padding-right: 3px;
+    }
+
+    #menu ul li ul li a {
+        font: inherit;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #A0A0A0;
+        text-decoration: none;
+    }
+
+    #menu ul li {
+        float: left;
+        width: 80px;
+    }
+
+    #menu ul li a {
+        padding: 10px 10px;
+    }
+
+    #menu li {
+        position: relative;
+        float: left;
+    }
+
+    #menu ul li ul, #menu:hover ul li ul, #menu:hover ul li:hover ul li ul {
+        display: none;
+        list-style-type: none;
+        width: 140px;
+    }
+
+    #menu:hover ul, #menu:hover ul li:hover ul, #menu:hover ul li:hover ul li:hover ul {
+        display: block;
+    }
+
+    #menu:hover ul li:hover ul li:hover ul {
+        position: absolute;
+        margin-left: 145px;
+        margin-top: -22px;
+        font: 10px;
+    }
+
+    #menu:hover ul li:hover ul {
+        position: absolute;
+        margin-top: 1px;
+        font: 10px;
+        bottom: 100%;
+    }
+
+
+    #box * {
+        padding: 0;
+        margin: 0;
+    }
+
+    #box {
+        overflow: scroll;
+        position: absolute;
+        top: 120px;
+        left: 150px;
+        width: 800px;
+        height: 580px;
+        /*border: solid 1px #000000;*/
+        line-height: 1.5em;
+        padding-right: 35%;
+    }
+
+    #box p.zoe {
+        font-size: 22px;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        color: #101010;
+        text-align: justify;
+        /*-webkit-animation: fadein 2s;*/
+    }
+
+    #box p.cite {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        color: #1D1D1D;
+        text-align: right;
+        /*-webkit-animation: fadein 4s;*/
+    }
+
+    #box p.biopolitics {
+        text-indent: 50px;
+        padding-top: 40px;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        color: #101010;
+        text-align: justify;
+        /*-webkit-animation: fadein 2s;*/
+        line-height: 2em;
+    }
+
+
+    @-webkit-keyframes fadein {
+        from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+       
+
+

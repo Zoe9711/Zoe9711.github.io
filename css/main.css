@@ -155,26 +155,11 @@
     }
 }
 
+
+
 .bg {
     background-color: #585858;
 }
 
-
-
-
-
-.scene_element {
-    animation-duration: 0.25s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
-
-}
-.scene_element--fadeout {
-    animation-name: fadeOut;
-}
-
-.scene_element--darken {
-    animation-name: darken;
-}
        
 
