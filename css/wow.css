@@ -175,30 +175,30 @@
     }
 
 
-    #box * {
-        padding: 0;
-        margin: 0;
-    }
+#box * {
+    padding: 0;
+    margin: 0;
+}
 
-    #box {
-        overflow: scroll;
-        position: absolute;
-        top: 120px;
-        left: 150px;
-        width: 800px;
-        height: 580px;
-        /*border: solid 1px #000000;*/
-        line-height: 1.5em;
-        padding-right: 35%;
-    }
+#box {
+    overflow: scroll;
+    position: absolute;
+    top: 130px;
+    left: 150px;
+    width: 800px;
+    height: 580px;
+    /*border: solid 1px #000000;*/
+    line-height: 1.5em;
+    padding-right: 35%;
+}
 
     #box p.zoe {
-        font-size: 22px;
+        font-size: 24px;
         font-family: 'Times New Roman', Times, serif;
         font-style: italic;
         color: #101010;
         text-align: justify;
-        /*-webkit-animation: fadein 2s;*/
+        -webkit-animation: fadein 2s;
     }
 
     #box p.cite {
@@ -209,17 +209,17 @@
         font-style: italic;
         color: #1D1D1D;
         text-align: right;
-        /*-webkit-animation: fadein 4s;*/
+        -webkit-animation: fadein 4s;
     }
 
     #box p.biopolitics {
         text-indent: 50px;
-        padding-top: 40px;
+        padding-top: 90px;
         font-size: 18px;
         font-family: 'Times New Roman', Times, serif;
         color: #101010;
         text-align: justify;
-        /*-webkit-animation: fadein 2s;*/
+        -webkit-animation: fadein 2s;
         line-height: 2em;
     }
 
