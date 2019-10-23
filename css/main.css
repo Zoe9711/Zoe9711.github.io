@@ -115,6 +115,8 @@ body {
             color: #101010;
             text-align: justify;
             -webkit-animation: fadein 2s;
+            line-height: 1.5em;
+
         }
 
         #box p.cite {
@@ -129,10 +131,11 @@ body {
         }
 
         #box p.biopolitics {
-            text-indent: 50px;
-            padding-top: 90px;
+            /* text-indent: 50px; */
+            /* padding-top: 90px; */
+            padding-top: 220px;
             font-size: 18px;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: Kaiti TC;
             color: #101010;
             text-align: justify;
             -webkit-animation: fadein 2s;
