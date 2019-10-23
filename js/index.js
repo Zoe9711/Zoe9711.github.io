@@ -1,6 +1,7 @@
 jQuery(document).ready(function(){
     
 window.addEventListener('load', function() {
+	pause(4000);
 	$('body').ripples({
 		resolution: 256,
 		dropRadius: 20, //px
@@ -16,6 +17,17 @@ setInterval(function() {
 
 	$el.ripples('drop', x, y, dropRadius, strength);
 }, 4000);
+
 })
 
 });
+
+function pause(ms) {
+	var d1 = new Date();
+	var d2 = null;
+	do {
+		d2 = new Date();
+	}
+	while (d2 - d1 < ms);
+}
+
