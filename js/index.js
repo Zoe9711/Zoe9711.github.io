@@ -1,14 +1,11 @@
 jQuery(document).ready(function(){
     
-    
 		$('body').ripples({
 			resolution: 256,
 			dropRadius: 20, //px
 			perturbance: 0.04,
 		});
-	
-	
-    
+	    
     setInterval(function() {
 		var $el = $('body');
 		var x = Math.random() * $el.outerWidth();
@@ -17,6 +14,6 @@ jQuery(document).ready(function(){
 		var strength = 0.04 + Math.random() * 0.04;
 
 		$el.ripples('drop', x, y, dropRadius, strength);
-	}, 200);
+	}, 800);
 
 });

@@ -1,4 +1,20 @@
-﻿
+﻿html {
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../assets/imgs/gclandscape.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+
+/* 
 ::-webkit-scrollbar {
     display: none;
 }
@@ -32,7 +48,6 @@ body {
             text-decoration: underline;
             text-decoration-color: #A0A0A0;
         }
-
 
     #menu ul li ul li {
         width: 80px;
@@ -89,11 +104,9 @@ body {
             bottom: 100%;
         }
 
-
 #box * {
         padding: 0;
         margin: 0;
-        
     }
 
     #box {
@@ -103,7 +116,6 @@ body {
     left: 10vw;
     right: 33vw;
     bottom: 17vh;
-    /*border: solid 1px #000000;*/
     line-height: 1.5em;
     padding-right: 1%;
     }
@@ -131,8 +143,6 @@ body {
         }
 
         #box p.biopolitics {
-            /* text-indent: 50px; */
-            /* padding-top: 90px; */
             padding-top: 220px;
             font-size: 18px;
             font-family: Kaiti TC;
@@ -141,7 +151,6 @@ body {
             -webkit-animation: fadein 2s;
             line-height: 2em;
         }
-
 
 @-webkit-keyframes fadein {
     from {
@@ -163,11 +172,9 @@ body {
     }
 }
 
-
-
 .bg {
     background-color: #585858;
 }
 
        
-
+ */

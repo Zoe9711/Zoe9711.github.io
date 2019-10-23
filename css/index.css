@@ -18,7 +18,6 @@ h1 {
     font-size: 12vh;
     font-family: 'Open Sans', sans-serif;
     font-weight: 50;
-    color: #D8D8D8;
     
     text-shadow: 0 0 8px cornflowerblue;
     cursor: pointer;    
@@ -31,7 +30,11 @@ h1 {
     transform: translate(50%, -50%);
 }
 
+h1 a {
+    text-decoration: none;
+    color: #D8D8D8;
 
+}
 
 
 /* html, body {
