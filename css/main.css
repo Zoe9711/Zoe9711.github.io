@@ -1,4 +1,7 @@
-﻿
+﻿@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Jura');
+
+
 html {
 
 }
@@ -33,9 +36,9 @@ body {
     padding-bottom: 30px;
     height: 15vh;
     width: 98%;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Orbitron'; */
+    font-family: 'Jura';
     font-size: 4vh;
-    font-weight: 10;
     text-shadow: 0 0 8px cornflowerblue;
     text-align: left;
 }
