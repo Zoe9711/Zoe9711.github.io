@@ -96,11 +96,10 @@ body {
     color: #D8D8D8;
 }
 
-.transparent-1 a:hover {
+#contact a:hover {
     text-decoration: underline;
     text-decoration-color: #D8D8D8;
     
-
 }
 
 
