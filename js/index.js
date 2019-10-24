@@ -1,7 +1,8 @@
 jQuery(document).ready(function(){
-    
-window.addEventListener('load', function() {
-	pause(4000);
+
+
+	// pause(4000);
+
 	$('body').ripples({
 		resolution: 256,
 		dropRadius: 20, //px
@@ -18,7 +19,9 @@ setInterval(function() {
 	$el.ripples('drop', x, y, dropRadius, strength);
 }, 4000);
 
-})
+// window.addEventListener('load', function() {
+
+// })
 
 });
 
