@@ -14,20 +14,22 @@ jQuery(document).ready(function(){
 		var w = 0.5 * $('body').outerWidth();
 		var h = 0.5 * $('body').outerHeight();
 	    var dropRadius = 20;
-	    var strength = 0.04 + Math.random() * 0.04;
+	    var strength = 20;
 		
-		$('body').ripples('drop', w, h, dropRadius, strength)}, 11000);
+		$('body').ripples('drop', w, h, dropRadius, strength)
+	
+	}, 10500);
 
 	setTimeout(function(){   
-    setInterval(function() {
-		var x = Math.random() * $('body').outerWidth();
-		var y = Math.random() * $('body').outerHeight();
-		var dropRadius = 20;
-		var strength = 0.04 + Math.random() * 0.04;
+		setInterval(function() {
+			var x = Math.random() * $('body').outerWidth();
+			var y = Math.random() * $('body').outerHeight();
+			var dropRadius = 20;
+			var strength = 0.04 + Math.random() * 0.04;
 
-	    $('body').ripples('drop', x, y, dropRadius, strength);
-	}, 1000);
-}, 11000);
+			$('body').ripples('drop', x, y, dropRadius, strength);
+		}, 1000);
+    }, 13000);
 
 	
 
