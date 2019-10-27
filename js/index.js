@@ -13,8 +13,8 @@ jQuery(document).ready(function(){
     setTimeout(function(){
 		var w = 0.5 * $('body').outerWidth();
 		var h = 0.5 * $('body').outerHeight();
-	    var dropRadius = 20;
-	    var strength = 20;
+	    var dropRadius = 50;
+	    var strength = 3;
 		
 		$('body').ripples('drop', w, h, dropRadius, strength)
 	
@@ -28,7 +28,7 @@ jQuery(document).ready(function(){
 			var strength = 0.04 + Math.random() * 0.04;
 
 			$('body').ripples('drop', x, y, dropRadius, strength);
-		}, 1000);
+		}, 800);
     }, 13000);
 
 	
