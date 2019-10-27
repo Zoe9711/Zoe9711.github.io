@@ -1,7 +1,7 @@
 jQuery(document).ready(function(){
 
-	typeWriter1();
-	setTimeout(typeWriter2, 3000);
+	setTimeout(typeWriter1, 3000);
+	setTimeout(typeWriter2, 6000);
 
 
 	$('body').ripples({
@@ -10,9 +10,15 @@ jQuery(document).ready(function(){
 		perturbance: 0.04,
 	});
 
+    setTimeout(function(){
+		var w = 0.5 * $('body').outerWidth();
+		var h = 0.5 * $('body').outerHeight();
+	    var dropRadius = 20;
+	    var strength = 0.04 + Math.random() * 0.04;
+		
+		$('body').ripples('drop', w, h, dropRadius, strength)}, 11000);
 
-
-	
+	setTimeout(function(){   
     setInterval(function() {
 		var x = Math.random() * $('body').outerWidth();
 		var y = Math.random() * $('body').outerHeight();
@@ -20,8 +26,8 @@ jQuery(document).ready(function(){
 		var strength = 0.04 + Math.random() * 0.04;
 
 	    $('body').ripples('drop', x, y, dropRadius, strength);
-	}, 8500);
-
+	}, 1000);
+}, 11000);
 
 	
 
