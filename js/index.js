@@ -1,29 +1,88 @@
 jQuery(document).ready(function(){
 
+	typeWriter1();
+	setTimeout(typeWriter2, 3000);
 
-	// pause(4000);
 
 	$('body').ripples({
 		resolution: 256,
 		dropRadius: 20, //px
 		perturbance: 0.04,
 	});
-	
-setInterval(function() {
-	var $el = $('body');
-	var x = Math.random() * $el.outerWidth();
-	var y = Math.random() * $el.outerHeight();
-	var dropRadius = 20;
-	var strength = 0.04 + Math.random() * 0.04;
 
-	$el.ripples('drop', x, y, dropRadius, strength);
-}, 4000);
+
+
+	
+    setInterval(function() {
+		var x = Math.random() * $('body').outerWidth();
+		var y = Math.random() * $('body').outerHeight();
+		var dropRadius = 20;
+		var strength = 0.04 + Math.random() * 0.04;
+
+	    $('body').ripples('drop', x, y, dropRadius, strength);
+	}, 8500);
+
+
+	
 
 // window.addEventListener('load', function() {
 
 // })
 
 });
+
+
+var i = 0;
+var txt = 'SILENCE'; 
+var txt_1 = '        STRIKES LIKE A';
+var speed = 120; 
+
+function typeWriter1() {
+	if (i < txt.length) {
+		document.getElementById("silence").innerHTML += txt.charAt(i);
+		i++;
+		setTimeout(typeWriter1, speed);
+	}
+}
+
+function typeWriter2() {
+	if (i < txt_1.length) {
+		document.getElementById("silence").innerHTML += txt_1.charAt(i);
+		i++;
+		setTimeout(typeWriter2, speed);
+	}
+	if (i == txt_1.length - 1) {
+		setTimeout(fade, 2000);
+		setTimeout(appear, 3000);
+	}
+
+}
+
+var opacity = 0.8;
+
+function fade() {
+	if (opacity > 0) {
+		opacity -= .01;
+		setTimeout(fade, 20);
+	}
+	document.getElementById('silence').style.opacity = opacity;
+	
+	
+}
+
+
+var opacity_1 = 0;
+
+function appear() {
+	if (opacity_1 < 0.8) {
+		opacity_1 += .01;
+		setTimeout(appear, 20);
+	}
+	document.getElementById('hurricane').style.opacity = opacity_1;
+
+}
+
+
 
 function pause(ms) {
 	var d1 = new Date();
