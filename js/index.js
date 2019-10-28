@@ -18,7 +18,7 @@ jQuery(document).ready(function(){
 		
 		$('body').ripples('drop', w, h, dropRadius, strength)
 	
-	}, 10000);
+	}, 10500);
 //10500
 	setTimeout(function(){   
 		setInterval(function() {
@@ -29,7 +29,7 @@ jQuery(document).ready(function(){
 
 			$('body').ripples('drop', x, y, dropRadius, strength);
 		}, 400);
-    }, 12500);
+    }, 13000);
 //13000
 	
 
@@ -41,12 +41,9 @@ jQuery(document).ready(function(){
 
 
 var i = 0;
-// var txt = 'SILENCE'; 
-// var txt_1 = '        STRIKES LIKE A';
-var txt = '隐约雷鸣  阴霾天空';
-var txt_1 = '           但盼风雨来';
-// var speed = 120; 
-var speed = 150; 
+var txt = 'SILENCE'; 
+var txt_1 = '        STRIKES LIKE A';
+var speed = 120; 
 
 
 function typeWriter1() {
