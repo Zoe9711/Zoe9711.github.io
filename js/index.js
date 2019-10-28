@@ -13,13 +13,13 @@ jQuery(document).ready(function(){
     setTimeout(function(){
 		var w = 0.5 * $('body').outerWidth();
 		var h = 0.5 * $('body').outerHeight();
-	    var dropRadius = 50;
+	    var dropRadius = 30;
 	    var strength = 1;
 		
 		$('body').ripples('drop', w, h, dropRadius, strength)
 	
-	}, 10500);
-
+	}, 10000);
+//10500
 	setTimeout(function(){   
 		setInterval(function() {
 			var x = Math.random() * $('body').outerWidth();
@@ -29,8 +29,8 @@ jQuery(document).ready(function(){
 
 			$('body').ripples('drop', x, y, dropRadius, strength);
 		}, 400);
-    }, 13000);
-
+    }, 12500);
+//13000
 	
 
 // window.addEventListener('load', function() {
@@ -41,9 +41,13 @@ jQuery(document).ready(function(){
 
 
 var i = 0;
-var txt = 'SILENCE'; 
-var txt_1 = '        STRIKES LIKE A';
-var speed = 120; 
+// var txt = 'SILENCE'; 
+// var txt_1 = '        STRIKES LIKE A';
+var txt = '隐约雷鸣  阴霾天空';
+var txt_1 = '           但盼风雨来';
+// var speed = 120; 
+var speed = 150; 
+
 
 function typeWriter1() {
 	if (i < txt.length) {
