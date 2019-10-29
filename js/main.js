@@ -1,17 +1,23 @@
 ﻿jQuery(document).ready(function(){
-    typeWriter();
+
+
+    $('body').ripples({
+      resolution: 256,
+      dropRadius: 20, //px
+      perturbance: 0.04,
+    });
+
+    setInterval(function() {
+      var x = Math.random() * $('body').outerWidth();
+      var y = Math.random() * $('body').outerHeight();
+      var dropRadius = 20;
+      var strength = 0.04 + Math.random() * 0.04;
+
+      $('body').ripples('drop', x, y, dropRadius, strength);
+    }, 400);
+
 });
 
-var i = 0;
-var txt = 'Hey, this is Zoe.'; 
-var speed = 50; 
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementsByClassName('transparent-1').innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
 
 

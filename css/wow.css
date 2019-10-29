@@ -1,81 +1,22 @@
 ﻿
-@-webkit-keyframes darken {
-    from {
-        background-color: #585858;
-        /* opacity: 0; */
-
-    }
-
-    to {
-        background-color: #000000;
-        /* opacity: 1; */
-
-    }        
+* {
+    margin: 0;
+    padding: 0;
 }
 
-@-webkit-keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
+body {
+    background-image: url(../assets/imgs/gclandscape.jpg);
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
 }
 
-@-webkit-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+#container {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.7);
+    display: flex;
 }
-
-@-webkit-keyframes showHide { 
-    0% {
-        opacity:0;
-        /*color: #000000;*/
-    }
-
-    40% {
-        opacity: 1;
-        /*color: #A0A0A0;*/
-    }
-
-    70% {
-        opacity: 1;
-        /*color: #A0A0A0;*/
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-.bg {
-    background-color: #000000;
-}
-
-.scene_element {
-    /* animation-duration: 5s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both; */
-    animation: darken 5s, fadein 8s;
-}
-
-
-
-/* .scene_element--darken {
-    animation-name: darken;
-}
-
-.scene_element--fadeIn {
-    animation-name: fadein;
-} */
-
-
 
 .slider {
     position: relative;
@@ -88,85 +29,99 @@ img {
 }
 
 
-#A1 {
+.A1 {
     overflow:scroll;
     position: absolute;
     top: 28.2vh;
-    right: 61.5vw;
-    bottom: 34.7vh;
-    left: 1.46vw;
+    right: 59.5vw;
+    height: 37vh;
+    width: 65.8vh;
+    /* bottom: 34.7vh;
+    left: 1.46vw; */
     border: solid 1px #ffffff;
     padding: 0;
     margin: 0;
     }
 
-#A2 {
+.A2 {
     overflow:scroll;
     position: absolute;
     top: 0.74vh;
     right: 56.8vw;
-    bottom: 76.1vh;
-    left: 19.9vw;
+    height: 23.1vh;
+    width: 41.2vh;
+    /* bottom: 76.1vh;
+    left: 19.9vw; */
     border: solid 1px #ffffff;
     padding: 0;
     margin: 0;
     }
 
-#A3 {
+.A3 {
     overflow:scroll;
     position: absolute;
     top: 3.98vh;
-    right: 1.43vw;
-    bottom: 54.35vh;
-    left: 51.9vw;
+    right: 3.93vw;
+    height: 41.7vh;
+    width: 74.1vh;
+    /* bottom: 54.35vh;
+    left: 51.9vw; */
     border: solid 1px #ffffff;
     padding: 0;
     margin: 0;
     }
 
-#A4 {
+.A4 {
     overflow:scroll;
     position: absolute;
     top: 61.4vh;
     right: 1.67vw;
-    bottom: 6.2vh;
-    left: 65.9vw;
+    height: 32.4vh;
+    width: 57.6vh;
+    /* bottom: 6.2vh;
+    left: 65.9vw; */
     border: solid 1px #ffffff;
     padding: 0;
     margin: 0;
     }
 
-#A5 {
+.A5 {
     overflow:scroll;
     position: absolute;
     top: 70.8vh;
     right: 49.4vw;
-    bottom: 1.39vh;
-    left: 22.8vw;
+    height: 27.8vh;
+    width: 49.4vh;
+    /* bottom: 1.39vh;
+    left: 22.8vw; */
     border: solid 1px #ffffff;
     padding: 0;
     margin: 0;
     }
 
-#A6 {
+.A6 {
     overflow:scroll;
     position: absolute;
     top: 76.66vh;
     right: 81.3vw;
-    bottom: 9.44vh;
-    left: 4.84vw;
+    height: 13.9vh;
+    width: 24.7vh;
+    /* bottom: 9.44vh;
+    left: 4.84vw; */
     border: solid 1px #ffffff;
     padding: 0;
     margin: 0;
     }
 
-#A7 {
+.A7 {
     overflow:scroll;
     position: absolute;
     top: 50vh;
     right: 36.3vw;
-    bottom: 31.5vh;
-    left: 45.2vw;
+    height: 18.5vh;
+    width: 32.9vh;
+    /* bottom: 31.5vh;
+    left: 45.2vw; */
     border: solid 1px #ffffff;
     padding: 0;
     margin: 0;
