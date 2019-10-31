@@ -122,6 +122,25 @@ body {
     
 }
 
+#remains-l {
+    /* border: 4px solid white; */
+    position: fixed;
+    left: 0%;
+    right: 80%;
+    height: 100%;
+    overflow: scroll;
+}
+
+#remains-r {
+    /* border: 4px solid white; */
+    position: fixed;
+    left: 80%;
+    right: 0%;
+    height: 100%;
+    overflow: scroll;
+
+}
+
 
 
 /* 
