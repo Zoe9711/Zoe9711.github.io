@@ -1,4 +1,7 @@
-﻿
+﻿@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Jura');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -18,9 +21,84 @@ body {
     display: flex;
 }
 
-.slider {
-    position: relative;
+.wrapper {
+    /* border: 1px solid white; */
+    position: fixed;
+    left: 3%;
+    top: 30%;
+
 }
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+
+.left a {
+    /* border: 1px solid yellow; */
+    font-family: "Orbitron";
+    font-size: 5vh;
+    height: 9%;
+    text-decoration: none;
+    color: #D0d0D0;
+    text-shadow: 0 0 9px cornflowerblue;
+}
+
+
+.right {
+    /* border: 1px solid red; */
+    height: 40vh;
+    width: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: space-between;
+} 
+
+.map {
+    width: 120px;
+    text-align: center;
+    right: 0;
+    left: 0;
+} 
+
+.map a {
+    display: block;
+    overflow: hidden; 
+    text-decoration: none;
+    color: #D0d0D0;
+    text-shadow: 0 0 9px cornflowerblue;
+    font-family: "Orbitron";
+}
+
+
+.map a:hover {
+    text-decoration-color: #D0D0D0;
+    text-decoration: underline;
+}
+
+.imgcontainer {
+    border: 1px solid white;
+    position: fixed;
+    left: 25%;
+    right: 15%;
+    top: 15%;
+    bottom: 35%;
+}
+
+.gallery {
+    position: fixed;
+    border: 1px solid white;
+    bottom: 10%;
+    top: 75%;
+    left: 20%;
+    right: 10%;
+
+}
+
 
 img {
     position: absolute;
@@ -31,136 +109,6 @@ img {
 }
 
 
-.A1 {
-    overflow:scroll;
-    position: absolute;
-    top: 28.2vh;
-    right: 59.5vw;
-    height: 37vh;
-    width: 65.8vh;
-    /* bottom: 34.7vh;
-    left: 1.46vw; */
-    /* border: solid 1px #ffffff; */
-    padding: 0;
-    margin: 0;
-    }
-
-.A1-fading {
-    animation:fading 5s infinite
-}
-
-
-.A2 {
-    overflow:scroll;
-    position: absolute;
-    top: 0.74vh;
-    right: 56.8vw;
-    height: 23.1vh;
-    width: 41.2vh;
-    /* bottom: 76.1vh;
-    left: 19.9vw; */
-    /* border: solid 1px #ffffff; */
-    padding: 0;
-    margin: 0;
-    }
-
-    .A2-fading {
-        animation:fading 4.5s infinite
-    }
-
-.A3 {
-    overflow:scroll;
-    position: absolute;
-    top: 3.98vh;
-    right: 3.93vw;
-    height: 41.7vh;
-    width: 74.1vh;
-    /* bottom: 54.35vh;
-    left: 51.9vw; */
-    /* border: solid 1px #ffffff; */
-    padding: 0;
-    margin: 0;
-    }
-
-    .A3-fading {
-        animation:fading 4s infinite
-    }
-
-.A4 {
-    overflow:scroll;
-    position: absolute;
-    top: 61.4vh;
-    right: 1.67vw;
-    height: 32.4vh;
-    width: 57.6vh;
-    /* bottom: 6.2vh;
-    left: 65.9vw; */
-    /* border: solid 1px #ffffff; */
-    padding: 0;
-    margin: 0;
-    }
-
-    .A4-fading {
-        animation:fading 3.5s infinite
-    }
-
-.A5 {
-    overflow:scroll;
-    position: absolute;
-    top: 70.8vh;
-    right: 49.4vw;
-    height: 27.8vh;
-    width: 49.4vh;
-    /* bottom: 1.39vh;
-    left: 22.8vw; */
-    /* border: solid 1px #ffffff; */
-    padding: 0;
-    margin: 0;
-    }
-
-    .A5-fading {
-        animation:fading 5.2s infinite
-    }
-
-.A6 {
-    overflow:scroll;
-    position: absolute;
-    top: 76.66vh;
-    right: 81.3vw;
-    height: 13.9vh;
-    width: 24.7vh;
-    /* bottom: 9.44vh;
-    left: 4.84vw; */
-    /* border: solid 1px #ffffff; */
-    padding: 0;
-    margin: 0;
-    }
-
-    .A6-fading {
-        animation:fading 3.8s infinite
-    }
-
-.A7 {
-    overflow:scroll;
-    position: absolute;
-    top: 50vh;
-    right: 36.3vw;
-    height: 18.5vh;
-    width: 32.9vh;
-    /* bottom: 31.5vh;
-    left: 45.2vw; */
-    /* border: solid 1px #ffffff; */
-    padding: 0;
-    margin: 0;
-    }
-
-    .A7-fading {
-        animation:fading 4.3s infinite
-    }
-
-a {
-    display: block;
-}
 
 @keyframes fading{
     

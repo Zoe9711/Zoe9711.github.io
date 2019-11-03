@@ -129,6 +129,7 @@ body {
     right: 80%;
     height: 100%;
     overflow: scroll;
+    background-color: rgb(0, 0, 0, 0);
 }
 
 #remains-r {
@@ -138,7 +139,7 @@ body {
     right: 0%;
     height: 100%;
     overflow: scroll;
-
+    background-color: rgb(0, 0, 0, 0);
 }
 
 
