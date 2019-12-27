@@ -2,10 +2,9 @@
 
     
     $('.wrapper').hover(function(){
-        $('.right').stop().animate({width: '120px'}, 400)
+        $('.right').stop().animate({width: '12vw'}, 400)
     }, function(){
         $('.right').stop().animate({width: '-0'}, 400)
-    
     }
     );
 
