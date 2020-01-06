@@ -62,7 +62,7 @@ function typeWriter2() {
 	}
 	if (i == txt_1.length - 1) {
 		setTimeout(fade, 2000);
-		setTimeout(appear, 3000);
+		setTimeout(appear, 500);
 	}
 
 }
