@@ -8,21 +8,49 @@
     }
     );
 
-    $('body').ripples({
-      resolution: 256,
-      dropRadius: 20, //px
-      perturbance: 0.04,
-    });
+    // $('body').ripples({
+    //   resolution: 256,
+    //   dropRadius: 20, //px
+    //   perturbance: 0.04,
+    // });
 
-    setInterval(function() {
-      var x = Math.random() * $('body').outerWidth();
-      var y = Math.random() * $('body').outerHeight();
-      var dropRadius = 20;
-      var strength = 0.04 + Math.random() * 0.04;
+    // setInterval(function() {
+    //   var x = Math.random() * $('body').outerWidth();
+    //   var y = Math.random() * $('body').outerHeight();
+    //   var dropRadius = 20;
+    //   var strength = 0.04 + Math.random() * 0.04;
 
-      $('body').ripples('drop', x, y, dropRadius, strength);
-    }, 400);
+    //   $('body').ripples('drop', x, y, dropRadius, strength);
+    // }, 400);
 
+
+  const distanceToNextImage = -72;
+  let currentImageNumber = 0;
+
+  // YOUR CODE HERE
+  $("#lightbox").hide();
+  $(".item").click(function() {
+    currentImageNumber = parseInt($(this).attr("id"), 10);
+    $("#carousel-strip").css("left", currentImageNumber * distanceToNextImage + "vw");
+        $("#lightbox").show();
+  });
+
+    $("#right").click(function() {
+    currentImageNumber = (currentImageNumber + 1) % 24;
+    $("#carousel-strip").css("left", currentImageNumber * distanceToNextImage + "vw");
+  });
+
+  $("#left").click(function() {
+    currentImageNumber = currentImageNumber == 0 ? 23 : (currentImageNumber - 1);
+    $("#carousel-strip").css("left", currentImageNumber * distanceToNextImage + "vw");
+  });
+
+	
+	// OTHER CODE
+	// This closes the lightbox when you click on the overlay or the x.
+	$("#overlay, #close").click(function() {
+		$("#lightbox").hide();
+	})
 
 
 });

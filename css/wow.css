@@ -140,6 +140,82 @@ img {
     max-height:100%;
 }
 
+
+#left, #right {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 3;
+	padding: 20px;
+	font-size: 3vw;
+    color: white;
+    text-shadow: 0 0 9px cornflowerblue;
+    font-family: "Orbitron";
+}
+
+#left {
+	left: calc(50% - 42vw);
+}
+
+#right {
+	right: calc(50% - 42vw);
+}
+
+#close {
+	color: white;
+	font: 2vw arial, sans-serif;
+  	position: absolute;
+	right: 20px;
+    text-decoration: none;
+    text-shadow: 0 0 9px cornflowerblue;
+    font-family: "Orbitron";
+	top: 20px;
+	z-index: 3;
+}
+
+#overlay {
+	background: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+}
+
+#carousel-container {
+	position: absolute;
+	/* border: 1px solid yellow; */
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+	transform: translate(-50%, -50%);
+	/* background-color: grey; */
+	height: 40.5vw;
+	width: 72vw;
+	overflow: hidden;
+}
+
+#carousel-strip {
+	transition: 0.4s;
+	/* border: 1px solid blue; */
+	position: absolute;
+	left: 0;
+	display: flex;
+}
+
+.carousel-section {
+	/* YOUR CODE HERE */
+	/* border: 1px solid red; */
+	position: relative;
+	height: 40.5vw;
+	width: 72vw;
+}
+
+.carousel-section img {
+	width: 72vw;
+}
 /* .gallery {
     position: fixed;
     border: 1px solid white;
