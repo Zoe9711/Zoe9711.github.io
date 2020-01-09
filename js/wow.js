@@ -27,31 +27,87 @@
   const distanceToNextImage = -72;
   let currentImageNumber = 0;
 
-  // YOUR CODE HERE
-  $("#lightbox").hide();
+  $(".imgcontainer").hide();
+  $(".Azeroth").show();
+  $(".lightbox").hide();
+
+  //maps
+  $(".map.Azeroth").click(function() {
+    $(".imgcontainer").hide();
+    $(".Azeroth").show();
+    // $(".lightbox").hide();
+  });
+  
+  $(".map.Cataclysm").click(function() {
+    $(".imgcontainer").hide();
+    $(".Cataclysm").show();
+    // $(".lightbox").hide();
+  });
+
+  $(".map.KulTiras").click(function() {
+    $(".imgcontainer").hide();
+    $(".KulTiras").show();
+    // $(".lightbox").hide();
+  });
+
+  $(".map.Nazjatar").click(function() {
+    $(".imgcontainer").hide();
+    $(".Nazjatar").show();
+    // $(".lightbox").hide();
+  });
+  
+  $(".map.Northrend").click(function() {
+    $(".imgcontainer").hide();
+    $(".Northrend").show();
+    // $(".lightbox").hide();
+  });
+
+  $(".map.Legion").click(function() {
+    $(".imgcontainer").hide();
+    $(".Legion").show();
+    // $(".lightbox").hide();
+  });
+
+  $(".map.Outland").click(function() {
+    $(".imgcontainer").hide();
+    $(".Outland").show();
+    // $(".lightbox").hide();
+  });
+
+  $(".map.Pandaria").click(function() {
+    $(".imgcontainer").hide();
+    $(".Pandaria").show();
+    // $(".lightbox").hide();
+  });
+
+  $(".map.Zandalar").click(function() {
+    $(".imgcontainer").hide();
+    $(".Zandalar").show();
+    // $(".lightbox").hide();
+  });
+
+  //
   $(".item").click(function() {
     currentImageNumber = parseInt($(this).attr("id"), 10);
     $("#carousel-strip").css("left", currentImageNumber * distanceToNextImage + "vw");
-        $("#lightbox").show();
+    $(".lightbox").show();
   });
 
-    $("#right").click(function() {
-    currentImageNumber = (currentImageNumber + 1) % 24;
+  //Left and right
+  $("#right").click(function() {
+    currentImageNumber = (currentImageNumber + 1) % 64;
     $("#carousel-strip").css("left", currentImageNumber * distanceToNextImage + "vw");
   });
 
   $("#left").click(function() {
-    currentImageNumber = currentImageNumber == 0 ? 23 : (currentImageNumber - 1);
+    currentImageNumber = currentImageNumber == 0 ? 63 : (currentImageNumber - 1);
     $("#carousel-strip").css("left", currentImageNumber * distanceToNextImage + "vw");
   });
-
 	
-	// OTHER CODE
 	// This closes the lightbox when you click on the overlay or the x.
 	$("#overlay, #close").click(function() {
-		$("#lightbox").hide();
-	})
-
+		$(".lightbox").hide();
+	});
 
 });
 

@@ -71,17 +71,33 @@ body {
     text-align: center;
     right: 0;
     left: 0;
-} 
-
-.map a {
     display: block;
     overflow: hidden; 
     text-decoration: none;
     color: #D0d0D0;
     text-shadow: 0 0 9px cornflowerblue;
     font-family: "Orbitron";
+} 
+
+
+.map:hover {
+    text-decoration-color: #D0D0D0;
+    text-decoration: underline;
 }
 
+.map a {
+    /* border: 1px solid white; */
+    width: 12vw;
+    text-align: center;
+    right: 0;
+    left: 0;
+    display: block;
+    overflow: hidden; 
+    text-decoration: none;
+    color: #D0d0D0;
+    text-shadow: 0 0 9px cornflowerblue;
+    font-family: "Orbitron";
+} 
 
 .map a:hover {
     text-decoration-color: #D0D0D0;
@@ -226,24 +242,4 @@ img {
 
 } */
 
-
-
-
-
-
-@keyframes fading{
-    
-    0% {
-        opacity:0
-    }
-    40% { 
-        opacity:1
-    }
-    60% { 
-        opacity:1
-    }
-    100% {
-        opacity:0
-    }
-}
 
