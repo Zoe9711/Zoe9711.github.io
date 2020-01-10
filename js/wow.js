@@ -95,12 +95,12 @@
 
   //Left and right
   $("#right").click(function() {
-    currentImageNumber = (currentImageNumber + 1) % 200;
+    currentImageNumber = (currentImageNumber + 1) % 232;
     $("#carousel-strip").css("left", currentImageNumber * distanceToNextImage + "vw");
   });
 
   $("#left").click(function() {
-    currentImageNumber = currentImageNumber == 0 ? 199 : (currentImageNumber - 1);
+    currentImageNumber = currentImageNumber == 0 ? 231 : (currentImageNumber - 1);
     $("#carousel-strip").css("left", currentImageNumber * distanceToNextImage + "vw");
   });
 	
