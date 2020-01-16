@@ -117,6 +117,8 @@ body {
 .gallery {
     /* border: 1px solid white; */
     position: fixed;
+    /* height: 850px;
+    width: 1480px; */
     top: 6%;
     left: 20%;
     right: 10%;
