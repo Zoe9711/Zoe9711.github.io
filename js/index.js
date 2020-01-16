@@ -10,15 +10,15 @@ jQuery(document).ready(function(){
 		perturbance: 0.04,
 	});
 
-    setTimeout(function(){
-		var w = 0.5 * $('body').outerWidth();
-		var h = 0.5 * $('body').outerHeight();
-	    var dropRadius = 30;
-	    var strength = 1;
+    // setTimeout(function(){
+	// 	var w = 0.5 * $('body').outerWidth();
+	// 	var h = 0.5 * $('body').outerHeight();
+	//     var dropRadius = 30;
+	//     var strength = 1;
 		
-		$('body').ripples('drop', w, h, dropRadius, strength)
+	// 	$('body').ripples('drop', w, h, dropRadius, strength)
 	
-	}, 10500);
+	// }, 10500);
 //10500
 	setTimeout(function(){   
 		setInterval(function() {
@@ -28,8 +28,8 @@ jQuery(document).ready(function(){
 			var strength = 0.04 + Math.random() * 0.04;
 
 			$('body').ripples('drop', x, y, dropRadius, strength);
-		}, 400);
-    }, 13000);
+		}, 200);
+    }, 10500);
 //13000
 	
 
