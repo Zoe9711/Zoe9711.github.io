@@ -105,9 +105,8 @@ body {
 .video_container {
     /* border: 4px solid blue; */
     position: relative;
-    width: 90%;
-    left: 5%;
-    right: 5%;
+    width: 54%;
+    left: 20%;
 }
 
 .nontransparent a {
